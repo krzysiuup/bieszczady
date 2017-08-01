@@ -1,0 +1,248 @@
+body {
+    background: linear-gradient(#303030, #3F454A);
+    color: white;
+    font-family: Tahoma;
+    font-size: 100%;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.page__header {
+    background: url(images/headerbg.jpg);
+    background-size:cover, contain;
+    background-position: 0 20%;;
+    box-shadow: 0 0 2px black;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.page__title {
+    margin:0;
+    padding: 0;
+    text-align: center;
+    font-size: 5em;
+    text-shadow: 0 0 10px black;
+}
+
+.header__togglemenu {
+    display: none;
+    height: 30px;
+    width: 30px;
+    margin-left: 5px;
+    background-color: #286a47;
+    color: white;
+    border-radius: 100%;
+    border:1px solid white;
+}
+
+.page__nav {
+    background: #25593E;
+    box-shadow: 0 1px 2px black;
+    position:sticky;
+    top:-2px;
+    margin: 0;
+}
+
+.nav__items {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.nav__item {
+    flex-basis: 20%;
+    text-align: center;
+    margin: 10px 0;
+    border-left: 2px solid white;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 2em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition-duration: .2s;
+}
+
+.nav__item:first-child {
+    border: none;
+}
+
+.nav__link:hover {
+    background: #286a47;
+}
+
+.wrap {
+    display: flex;
+    margin-top: 10px;
+    color: black;
+}
+
+.page__gallery {
+    background: #CECECE;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery__title {
+    text-align: center;
+}
+
+.gallery__images {
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery__picture {
+    border-bottom: 2px solid #14482d;
+    padding: 10px 0;
+    flex-basis: 20%;
+}
+
+.picture__image {
+    width: 100%;
+}
+
+.picture__caption {
+    padding: 10px 0;
+}
+
+.articles__header {
+    background: #CECECE;
+    box-shadow: 0 0 3px black;
+    padding: 10px 30px;
+    margin: 20px;
+}
+
+.articles__title {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 4em;
+    padding-bottom: 5px;
+    border-bottom: 4px solid #14482d;
+}
+
+.articles__motto {
+    text-align: center;
+    font-size: 1.4em;
+}
+
+.articles__trips {
+    display: flex;
+    flex-direction: column;
+}
+
+.trips__trip {
+    background: #CECECE;
+    padding: 10px;
+    margin: 20px;
+    box-shadow: 0 0 3px black;
+}
+
+.trip__header {
+    border-bottom: 2px solid #14482d;
+}
+
+.trip__text {
+    padding: 10px 20px;
+}
+
+.page__footer {
+    border-top: 2px solid #14482d;
+    background: #303030;
+}
+
+.footer__copyrights {
+    text-align: center;
+    margin:0;
+    padding:20px;
+}
+
+@media screen and (max-width: 1100px) {
+    .page__gallery {
+        display: none;
+    }
+    .page__title {
+        font-size: 7vw;
+    }
+    
+    .articles__header {
+        font-size: 1.5vw;
+    }
+    
+    .articles__motto {
+        font-size: 4vw;
+    }
+    
+    .page__nav {
+        font-size: 1.4vw;
+    }
+    
+    .articles__header {
+        width: 100vw;
+        box-sizing: border-box;
+        margin: 10px 0;
+    }
+    
+    .trips__trip {
+        width: 100vw;
+        box-sizing: border-box;
+        margin: 10px 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .page__header {
+        background: #25593E;
+        height: auto;
+        padding: 10px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .header__togglemenu {
+        display: block;
+    }
+    
+    .page__nav {
+        display: none;
+        font-size: 3vw;
+    }
+    
+    .page__title {
+        font-size: 6vw;
+    }
+    
+    .nav__items {
+        flex-direction: column;
+    }
+    
+    .nav__item {
+        border: none;
+        border-top: 2px solid white;
+        margin:0;
+    }
+    
+    .nav__link {
+        padding: 30px 0;
+    }
+    
+    .hidden {
+        display: block;
+    }
+}
